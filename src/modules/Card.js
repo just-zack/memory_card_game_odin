@@ -1,32 +1,43 @@
-import sampleDog from "../img/sample_dog.png";
+import australianShepard from "../img/australian_shepard.png";
+import terrier from "../img/terrier.png";
+import bullDog from "../img/bull_dog.png";
+import blackLab from "../img/black_labrador.png";
+import pug from "../img/pug.png";
+import blueHeeler from "../img/blue_heeler.png";
+import germanShepard from "../img/german_shepard.png";
+import greyhound from "../img/greyhound.png";
+import goldenRetriever from "../img/golden_retriever.png";
+import poodle from "../img/poodle.png";
+import dalmatian from "../img/dalmatian.png";
+import bassetHound from "../img/basset_hound.png";
+
 import "../styles/Card.css";
 
 export default function Card() {
   const dogArray = [
-    { id: 0, breed: "Terrier", img: "" },
-    { id: 1, breed: "Bull Dog", img: "" },
-    { id: 2, breed: "Black Labrador", img: "" },
-    { id: 3, breed: "Pug", img: "" },
-    { id: 4, breed: "Australian Shepard", img: "" },
-    { id: 5, breed: "Blue Heeler", img: "" },
-    { id: 6, breed: "German Shepard", img: "" },
-    { id: 7, breed: "Greyhound", img: "" },
-    { id: 8, breed: "Golden Retriever", img: "" },
-    { id: 9, breed: "Poodle", img: "" },
-    { id: 10, breed: "Pitbull", img: "" },
-    { id: 11, breed: "Dalmatian", img: "" },
-    { id: 12, breed: "Basset Hound", img: "" },
+    { id: 0, breed: "Terrier", img: terrier },
+    { id: 1, breed: "Bull Dog", img: bullDog },
+    { id: 2, breed: "Black Labrador", img: blackLab },
+    { id: 3, breed: "Pug", img: pug },
+    { id: 4, breed: "Australian Shepard", img: australianShepard },
+    { id: 5, breed: "Blue Heeler", img: blueHeeler },
+    { id: 6, breed: "German Shepard", img: germanShepard },
+    { id: 7, breed: "Greyhound", img: greyhound },
+    { id: 8, breed: "Golden Retriever", img: goldenRetriever },
+    { id: 9, breed: "Poodle", img: poodle },
+    { id: 10, breed: "Dalmatian", img: dalmatian },
+    { id: 11, breed: "Basset Hound", img: bassetHound },
   ];
 
   function shuffleDogArray() {
-    dogArray.sort((a, b) => 0.5 - Math.random());
+    dogArray.sort((a, b) => 0.5 - Math.random()); //src: https://www.youtube.com/watch?v=5sNGqsMpW1E
     return dogArray;
   }
   function createDogCards() {
     return dogArray.map((dogArray) => {
       return (
-        <div className="card">
-          <img className="card_image" src={sampleDog}></img>
+        <div className="card" key={dogArray.id}>
+          <img className="card_image" src={dogArray.img}></img>
           <h3 className="card_name">{dogArray.breed}</h3>
         </div>
       );
@@ -35,55 +46,3 @@ export default function Card() {
 
   return <div className="card_container">{createDogCards()}</div>;
 }
-
-//     <div className="card_container">
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//       <div className="card">
-//         <img className="card_image" src={sampleDog}></img>
-//         <h3 className="card_name">Dog Name</h3>
-//       </div>
-//     </div>
-//   );

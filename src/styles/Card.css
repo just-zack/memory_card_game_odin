@@ -9,15 +9,21 @@
 
 .card {
   background-color: cadetblue;
-  border: 2px black solid;
+  border: 1px black solid;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10%;
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card_image {
   height: 150px;
+  border-radius: 10%;
 }
 
 .card_name {
   text-align: center;
+  word-break: normal;
 }
