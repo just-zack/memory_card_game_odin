@@ -17,3 +17,7 @@
 .card_image {
   height: 150px;
 }
+
+.card_name {
+  text-align: center;
+}
