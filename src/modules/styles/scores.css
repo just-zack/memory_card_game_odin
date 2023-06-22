@@ -1,0 +1,13 @@
+.scores_container {
+  background-color: aqua;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.score_view {
+  background-color: beige;
+  padding: 15px;
+  border-radius: 10px;
+}

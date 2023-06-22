@@ -1,0 +1,6 @@
+.title_container {
+  background-color: antiquewhite;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
