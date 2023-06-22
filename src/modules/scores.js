@@ -1,4 +1,4 @@
-import "./styles/scores.css";
+import "../styles/scores.css";
 
 export default function Scores({ scores }) {
   return (

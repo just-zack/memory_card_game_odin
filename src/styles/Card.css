@@ -1,0 +1,19 @@
+.card_container {
+  background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+}
+
+.card {
+  background-color: cadetblue;
+  border: 2px black solid;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card_image {
+  height: 150px;
+}
