@@ -5,13 +5,43 @@ import Card from "./modules/Card";
 import { useState } from "react";
 
 function App() {
-  const [scores, setScores] = useState({ currentScore: 0, highestScore: 0 });
+  const [highestScore, setHighestScore] = useState(0);
+  const [currentScore, setCurrentScore] = useState(0);
+  const [selectionArray, setSelectionArray] = useState([]);
+  const [currentSelection, setCurrentSelection] = useState();
+
+  function Game() {
+    if (selectionArray.length > 1) {
+      for (let i = 0; i < selectionArray.length; i++) {
+        if (
+          selectionArray.indexOf(selectionArray[i]) !==
+          selectionArray.lastIndexOf(selectionArray[i])
+        ) {
+          alert("gameOver");
+          setCurrentScore(0);
+          setSelectionArray([]);
+          return;
+        }
+      }
+    }
+    if (currentScore > highestScore) {
+      setHighestScore(currentScore);
+    }
+  }
 
   return (
     <div className="App">
       <Title />
-      <Scores scores={scores} />
-      <Card />
+      <Scores currentScore={currentScore} highestScore={highestScore} />
+      <Card
+        setCurrentScore={setCurrentScore}
+        currentScore={currentScore}
+        setSelectionArray={setSelectionArray}
+        selectionArray={selectionArray}
+        setCurrentSelection={setCurrentSelection}
+        currentSelection={currentSelection}
+      />
+      {Game()}
     </div>
   );
 }

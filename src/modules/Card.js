@@ -13,7 +13,14 @@ import bassetHound from "../img/basset_hound.png";
 
 import "../styles/Card.css";
 
-export default function Card() {
+export default function Card({
+  setCurrentScore,
+  currentScore,
+  setSelectionArray,
+  selectionArray,
+  setCurrentSelection,
+  currentSelection,
+}) {
   const dogArray = [
     { id: 0, breed: "Terrier", img: terrier },
     { id: 1, breed: "Bull Dog", img: bullDog },
@@ -36,13 +43,25 @@ export default function Card() {
   function createDogCards() {
     return dogArray.map((dogArray) => {
       return (
-        <div className="card" key={dogArray.id}>
+        <div
+          className="card"
+          key={dogArray.id}
+          onClick={() => {
+            setCurrentScore(currentScore + 1);
+            setCurrentSelection(dogArray.id);
+            setSelectionArray((selectionArray) => {
+              return [...selectionArray, dogArray.id];
+            });
+            console.log(currentSelection);
+            console.log(selectionArray);
+          }}
+        >
           <img className="card_image" src={dogArray.img}></img>
           <h3 className="card_name">{dogArray.breed}</h3>
         </div>
       );
     });
   }
-
+  shuffleDogArray();
   return <div className="card_container">{createDogCards()}</div>;
 }
