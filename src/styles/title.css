@@ -16,6 +16,12 @@
 
 @media (max-width: 600px) {
   .title {
-    font-size: 10vw;
+    font-size: 8vw;
+    flex: auto;
+  }
+
+  .title_container {
+    display: grid;
+    justify-content: center;
   }
 }

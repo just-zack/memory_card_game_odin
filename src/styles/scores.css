@@ -11,10 +11,11 @@
   .scores_container {
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
   }
 
   .score_view {
-    width: 60vw;
+    width: 50vw;
     text-align: center;
   }
 }

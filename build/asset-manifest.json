@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memory_card_game_odin/static/css/main.5c7a842f.css",
+    "main.css": "/memory_card_game_odin/static/css/main.24026e86.css",
     "main.js": "/memory_card_game_odin/static/js/main.761d8a51.js",
     "static/media/australian_shepard.png": "/memory_card_game_odin/static/media/australian_shepard.b8964544a5b32b2a3b24.png",
     "static/media/blue_heeler.png": "/memory_card_game_odin/static/media/blue_heeler.fb5c4e4cfd77c0715b65.png",
@@ -16,11 +16,11 @@
     "static/media/dalmatian.png": "/memory_card_game_odin/static/media/dalmatian.8a8c782c08e804f14a92.png",
     "static/media/treat.png": "/memory_card_game_odin/static/media/treat.fe9b942a52f304d62ec3.png",
     "index.html": "/memory_card_game_odin/index.html",
-    "main.5c7a842f.css.map": "/memory_card_game_odin/static/css/main.5c7a842f.css.map",
+    "main.24026e86.css.map": "/memory_card_game_odin/static/css/main.24026e86.css.map",
     "main.761d8a51.js.map": "/memory_card_game_odin/static/js/main.761d8a51.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c7a842f.css",
+    "static/css/main.24026e86.css",
     "static/js/main.761d8a51.js"
   ]
 }
