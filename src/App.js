@@ -23,13 +23,12 @@ function App() {
           return;
         }
       }
-      // } else if ((selectionArray.length = 12)) {
-      //   setSelectionArray([]);
-      //   return;
-      // }
-      if (currentScore > highestScore) {
-        setHighestScore(currentScore);
-      }
+    } else if (selectionArray.length === 12) {
+      setSelectionArray([]);
+      return;
+    }
+    if (currentScore > highestScore) {
+      setHighestScore(currentScore);
     }
   }
 
