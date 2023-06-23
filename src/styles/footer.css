@@ -1,0 +1,24 @@
+.footer_container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #d4a373;
+  border-top: 2px solid black;
+}
+
+a {
+  color: inherit;
+}
+
+.footer-githubIcon {
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  width: 30px;
+  height: 30px;
+}
+
+.footer-githubIcon:hover {
+  transform: rotate(360deg);
+}

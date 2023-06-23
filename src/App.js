@@ -2,6 +2,7 @@ import "./styles/App.css";
 import Title from "./modules/Title";
 import Scores from "./modules/Scores";
 import Card from "./modules/Card";
+import Footer from "./modules/footer";
 import { useState } from "react";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
           selectionArray.indexOf(selectionArray[i]) !==
           selectionArray.lastIndexOf(selectionArray[i])
         ) {
-          alert("gameOver");
+          alert("Game Over! Play Again");
           setCurrentScore(0);
           setSelectionArray([]);
           return;
@@ -45,6 +46,7 @@ function App() {
         currentSelection={currentSelection}
       />
       {Game()}
+      <Footer />
     </div>
   );
 }
