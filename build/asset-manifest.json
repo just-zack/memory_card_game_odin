@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c7a842f.css",
-    "main.js": "/static/js/main.1430ecf3.js",
-    "static/media/australian_shepard.png": "/static/media/australian_shepard.b8964544a5b32b2a3b24.png",
-    "static/media/blue_heeler.png": "/static/media/blue_heeler.fb5c4e4cfd77c0715b65.png",
-    "static/media/greyhound.png": "/static/media/greyhound.ecd59cddf1c063d20318.png",
-    "static/media/basset_hound.png": "/static/media/basset_hound.f652b3ca2ed0f4f2fb60.png",
-    "static/media/golden_retriever.png": "/static/media/golden_retriever.6be4342ed1f336049d59.png",
-    "static/media/pug.png": "/static/media/pug.75806eb5fc0287834d1e.png",
-    "static/media/german_shepard.png": "/static/media/german_shepard.f0ab5d548e7bc9b24039.png",
-    "static/media/poodle.png": "/static/media/poodle.76a9ae188825bc1b6f68.png",
-    "static/media/terrier.png": "/static/media/terrier.0c3f1ec77604fea90cbe.png",
-    "static/media/black_labrador.png": "/static/media/black_labrador.9ed009d4ddc65e228629.png",
-    "static/media/bull_dog.png": "/static/media/bull_dog.b8ea6f8962a83101a517.png",
-    "static/media/dalmatian.png": "/static/media/dalmatian.8a8c782c08e804f14a92.png",
-    "static/media/treat.png": "/static/media/treat.fe9b942a52f304d62ec3.png",
-    "index.html": "/index.html",
-    "main.5c7a842f.css.map": "/static/css/main.5c7a842f.css.map",
-    "main.1430ecf3.js.map": "/static/js/main.1430ecf3.js.map"
+    "main.css": "/memory_card_game_odin/static/css/main.5c7a842f.css",
+    "main.js": "/memory_card_game_odin/static/js/main.761d8a51.js",
+    "static/media/australian_shepard.png": "/memory_card_game_odin/static/media/australian_shepard.b8964544a5b32b2a3b24.png",
+    "static/media/blue_heeler.png": "/memory_card_game_odin/static/media/blue_heeler.fb5c4e4cfd77c0715b65.png",
+    "static/media/greyhound.png": "/memory_card_game_odin/static/media/greyhound.ecd59cddf1c063d20318.png",
+    "static/media/basset_hound.png": "/memory_card_game_odin/static/media/basset_hound.f652b3ca2ed0f4f2fb60.png",
+    "static/media/golden_retriever.png": "/memory_card_game_odin/static/media/golden_retriever.6be4342ed1f336049d59.png",
+    "static/media/pug.png": "/memory_card_game_odin/static/media/pug.75806eb5fc0287834d1e.png",
+    "static/media/german_shepard.png": "/memory_card_game_odin/static/media/german_shepard.f0ab5d548e7bc9b24039.png",
+    "static/media/poodle.png": "/memory_card_game_odin/static/media/poodle.76a9ae188825bc1b6f68.png",
+    "static/media/terrier.png": "/memory_card_game_odin/static/media/terrier.0c3f1ec77604fea90cbe.png",
+    "static/media/black_labrador.png": "/memory_card_game_odin/static/media/black_labrador.9ed009d4ddc65e228629.png",
+    "static/media/bull_dog.png": "/memory_card_game_odin/static/media/bull_dog.b8ea6f8962a83101a517.png",
+    "static/media/dalmatian.png": "/memory_card_game_odin/static/media/dalmatian.8a8c782c08e804f14a92.png",
+    "static/media/treat.png": "/memory_card_game_odin/static/media/treat.fe9b942a52f304d62ec3.png",
+    "index.html": "/memory_card_game_odin/index.html",
+    "main.5c7a842f.css.map": "/memory_card_game_odin/static/css/main.5c7a842f.css.map",
+    "main.761d8a51.js.map": "/memory_card_game_odin/static/js/main.761d8a51.js.map"
   },
   "entrypoints": [
     "static/css/main.5c7a842f.css",
-    "static/js/main.1430ecf3.js"
+    "static/js/main.761d8a51.js"
   ]
 }
