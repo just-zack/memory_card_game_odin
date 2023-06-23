@@ -11,7 +11,7 @@ function App() {
   const [currentSelection, setCurrentSelection] = useState();
 
   function Game() {
-    if (selectionArray.length > 1) {
+    if (selectionArray.length > 1 && selectionArray.length < 12) {
       for (let i = 0; i < selectionArray.length; i++) {
         if (
           selectionArray.indexOf(selectionArray[i]) !==
@@ -23,9 +23,13 @@ function App() {
           return;
         }
       }
-    }
-    if (currentScore > highestScore) {
-      setHighestScore(currentScore);
+      // } else if ((selectionArray.length = 12)) {
+      //   setSelectionArray([]);
+      //   return;
+      // }
+      if (currentScore > highestScore) {
+        setHighestScore(currentScore);
+      }
     }
   }
 
